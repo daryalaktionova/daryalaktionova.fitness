@@ -340,3 +340,70 @@ template {
   display: none;
 }
 
+/*Шрифты*/
+@font-face {
+  font-family: "Gora";
+  src: url("fonts/Gora-Free.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("fonts/OpenSans/OpenSans-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("fonts/OpenSans/OpenSans-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("fonts/OpenSans/OpenSans-LightItalic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: normal;
+}
+
+
+
+/*Переменные*/
+$dark-bg-color: #131415;
+$yellow: #f89513;
+
+/*Основные стили*/
+.header {
+  background-color: $dark-bg-color;
+}
+.container-header {
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+}
+.logo{
+  align-self: center;
+}
+.logo-text {
+  font-family: Gora;
+  font-size: 18px;
+  color: $yellow;
+}
+.top-bar {
+  margin: 0 auto;
+}
+.top-bar__list {
+  list-style: none;
+}
+
+.top-bar__item {
+  color:white;
+  display: inline-flex;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-family: "Open Sans";
+  font-weight: bold;
+}
