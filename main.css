@@ -327,7 +327,8 @@ template {
 .container-header {
   width: 1100px;
   margin: 0 auto;
-  display: flex; }
+  display: flex;
+  height: 76px; }
 
 .logo {
   align-self: center; }
@@ -335,13 +336,18 @@ template {
 .logo-text {
   font-family: Gora;
   font-size: 18px;
-  color: #f89513; }
+  color: #f89513;
+  text-decoration: none; }
+  .logo-text:hover {
+    text-decoration: none; }
 
 .top-bar {
-  margin: 0 auto; }
+  margin: 0 auto;
+  display: flex; }
 
 .top-bar__list {
-  list-style: none; }
+  list-style: none;
+  align-self: center; }
 
 .top-bar__item {
   color: white;
@@ -350,5 +356,86 @@ template {
   text-transform: uppercase;
   font-family: "Open Sans";
   font-weight: bold; }
+
+.top-bar__item-icon {
+  margin-right: 16px; }
+
+.top-bar__item-text {
+  margin-right: 28px;
+  padding-left: 32px;
+  display: flex;
+  height: 20px;
+  align-items: center;
+  transition: 0.2s;
+  color: white;
+  text-decoration: none; }
+  .top-bar__item-text:hover {
+    color: #f89513;
+    text-decoration: none; }
+
+.top-bar__item-active {
+  color: #f89513; }
+
+.top-bar__list .top-bar__item-active {
+  background: url("images/index-icon-active.png") no-repeat;
+  transition: 0.2s;
+  background-position-y: 50%; }
+
+.top-bar__item-active .top-bar__item-text {
+  color: #f89513; }
+
+.top-bar__index {
+  background: url("images/Index-icon.png") no-repeat;
+  transition: 0.2s;
+  background-position-y: 50%; }
+  .top-bar__index:hover {
+    background: url("images/index-icon-active.png") no-repeat;
+    background-position-y: 50%;
+    cursor: pointer; }
+
+.top-bar__reviews {
+  background: url("images/reviews-icon.png") no-repeat;
+  transition: 0.2s;
+  background-position-y: 50%; }
+  .top-bar__reviews:hover {
+    background: url("images/reviews-icon-active.png") no-repeat;
+    background-position-y: 50%;
+    cursor: pointer; }
+
+.top-bar__service {
+  background: url("images/service-icon.png") no-repeat;
+  transition: 0.2s;
+  background-position-y: 50%; }
+  .top-bar__service:hover {
+    background: url("images/service-icon-active.png") no-repeat;
+    background-position-y: 50%;
+    cursor: pointer; }
+
+.head-contacts {
+  font-weight: bold;
+  font-family: "Open Sans";
+  text-decoration: none;
+  text-align: right;
+  padding-top: 12px; }
+
+.head-contacts__phone {
+  color: white;
+  font-size: 21px;
+  text-decoration: none; }
+
+.head-contacts__schedule {
+  color: #f89513;
+  font-size: 14px;
+  border-bottom: 1px solid #f89513;
+  text-decoration: none; }
+
+.slider {
+  background-color: white;
+  display: flex;
+  height: 622px; }
+
+.slider__image {
+  margin: 0 auto;
+  align-self: center; }
 
 /*# sourceMappingURL=main.css.map */
