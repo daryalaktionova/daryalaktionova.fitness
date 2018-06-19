@@ -438,4 +438,29 @@ template {
   margin: 0 auto;
   align-self: center; }
 
+.container-features {
+  background-color: #131415; }
+
+.features {
+  width: 1100px;
+  margin: 0 auto; }
+
+.caption {
+  font-size: 49px;
+  font-weight: bold;
+  font-family: "Open Sans";
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 62px; }
+  .caption-white {
+    color: white; }
+
+.features {
+  display: flex; }
+
+.feature {
+  width: 274px;
+  color: white;
+  text-align: center; }
+
 /*# sourceMappingURL=main.css.map */
