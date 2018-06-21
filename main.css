@@ -456,11 +456,44 @@ template {
     color: white; }
 
 .features {
-  display: flex; }
+  display: flex;
+  justify-content: space-between; }
 
 .feature {
-  width: 274px;
   color: white;
-  text-align: center; }
+  text-align: center;
+  width: 220px; }
+
+.feature__img {
+  width: 68px;
+  height: 68px;
+  background-color: #f89513;
+  border-radius: 50%;
+  display: flex;
+  margin: 0 auto; }
+  .feature__img-icon {
+    align-self: center;
+    justify-content: space-between;
+    margin: 0 auto; }
+
+.description {
+  margin-top: 40px;
+  font-family: "Open Sans";
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 11px; }
+
+.text {
+  font-size: 18px;
+  font-family: "Open Sans";
+  line-height: 30px; }
+
+.feature-list {
+  font-size: 18px;
+  font-family: "Open Sans";
+  text-align: left;
+  line-height: 30px;
+  padding-bottom: 120px; }
 
 /*# sourceMappingURL=main.css.map */
