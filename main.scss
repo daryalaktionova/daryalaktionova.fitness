@@ -652,6 +652,12 @@ $yellow: #f89513;
   }
 }
 
+a.news-item__link {
+  text-decoration: none;
+  color: black;
+  display: flex;
+}
+
 .news-item__date {
   font-size: 14px;
   font-weight: 300;
@@ -882,6 +888,7 @@ $yellow: #f89513;
   height: 20px;
   border-radius: 50%;
   background-color: #d0d0d0;
+  transition: 0.2s;
   &:hover {
     background-color: $yellow;
   }

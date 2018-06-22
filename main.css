@@ -552,6 +552,11 @@ template {
   .news-item:nth-child(3) {
     border-bottom: none; }
 
+a.news-item__link {
+  text-decoration: none;
+  color: black;
+  display: flex; }
+
 .news-item__date {
   font-size: 14px;
   font-weight: 300;
@@ -740,7 +745,8 @@ template {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: #d0d0d0; }
+  background-color: #d0d0d0;
+  transition: 0.2s; }
   .social__item-link:hover {
     background-color: #f89513; }
 
