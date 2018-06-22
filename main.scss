@@ -643,20 +643,10 @@ body {
   background-size: cover;
 }
 
-.news-item__image-wrapper_1 {
-  background: url(images/1.jpg) no-repeat;
-  background-size: cover;
+.img-visibility {
+  visibility: hidden;
 }
 
-.news-item__image-wrapper_2 {
-  background: url(images/2.jpg) no-repeat;
-  background-size: cover;
-}
-
-.news-item__image-wrapper_3 {
-  background: url(images/3.jpg) no-repeat;
-  background-size: cover;
-}
 
 .news-item__text-wrapper {
   flex-shrink: 100;
