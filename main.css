@@ -451,7 +451,8 @@ template {
   font-family: "Open Sans";
   text-transform: uppercase;
   text-align: center;
-  padding-top: 62px; }
+  padding-top: 62px;
+  margin-top: 0; }
   .caption-white {
     color: white; }
 
