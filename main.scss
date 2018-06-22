@@ -505,10 +505,6 @@ $yellow: #f89513;
 }
 
 
-.container-slider {
-
-}
-
 .slider {
   background-color: white;
   display: flex;
@@ -867,4 +863,8 @@ $yellow: #f89513;
   &:hover {
     background-color: $yellow;
   }
+}
+
+.caption-black {
+  margin: 0;
 }
