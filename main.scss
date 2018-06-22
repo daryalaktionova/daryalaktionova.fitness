@@ -489,19 +489,33 @@ $yellow: #f89513;
   text-decoration: none;
   text-align: right;
   padding-top:12px;
+  padding-bottom: 12px;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  position: relative;
 }
 
 .head-contacts__phone {
   color: white;
   font-size: 21px;
   text-decoration: none;
+  width: 100%;
 }
 
 .head-contacts__schedule {
   color: $yellow;
   font-size: 14px;
-  border-bottom: 1px solid $yellow;
-  text-decoration: none;
+  text-decoration: 1px solid $yellow;
+  opacity: 0.7;
+  transition: 0.2s;
+  &:before {
+    content: '';
+    width: 100%;
+  }
+  &:hover {
+    color: white;
+  }
 }
 
 
@@ -608,17 +622,17 @@ $yellow: #f89513;
   background-size: cover;
 }
 
-.news-item__image-wrapper1 {
+.news-item__image-wrapper_1 {
   background: url(images/1.jpg) no-repeat;
   background-size: cover;
 }
 
-.news-item__image-wrapper2 {
+.news-item__image-wrapper_2 {
   background: url(images/2.jpg) no-repeat;
   background-size: cover;
 }
 
-.news-item__image-wrapper3 {
+.news-item__image-wrapper_3 {
   background: url(images/3.jpg) no-repeat;
   background-size: cover;
 }
@@ -752,6 +766,9 @@ $yellow: #f89513;
   width: 25px;
   height: 25px;
   display: block;
+  &:hover {
+    color: $yellow;
+  }
 }
 
 
@@ -779,6 +796,9 @@ $yellow: #f89513;
 .pagination__btn {
   color: #bebdbd;
   font-size: 22px;
+  &:hover {
+    color: black;
+  }
 }
 
 .pagination__active {
@@ -869,4 +889,48 @@ $yellow: #f89513;
 
 .caption-black {
   margin: 0;
+}
+
+.modal:before {
+  content: '';
+  position: absolute;
+  left: 87%;
+  top: -29%;
+  border: 10px solid transparent;
+  border-bottom: 10px solid white;
+}
+
+.modal {
+  background-color: white;
+  width: 162px;
+  height: 70px;
+  position: absolute;
+  box-shadow: 0 0 10px 0 rgba(23, 59, 117, 0.55);
+  border-radius: 3px;
+  top: 100%;
+  box-sizing: border-box;
+}
+
+.mode {
+  padding: 14px 19px 14px 19px;
+  text-align: left;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.mode__main {
+  font-size: 14px;
+  font-family: "Open Sans";
+  font-weight: bold;
+  color: $yellow;
+}
+
+.mode__dinner {
+  font-size: 14px;
+  font-family: "Open Sans";
+  font-weight: 300;
+}
+
+.head-contacts__schedule:hover + .mode {
+  opacity: 1;
 }
