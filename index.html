@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Афродита - первый проект Лактионовой Дарьи на курсе Основы верстки сайтов от loftschool </title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body>
 <div class="wrapper">
@@ -83,8 +85,8 @@
             </div>
         </div>
         <div class="container container-news">
-            <div class="news-wrapper">
                 <h3 class="caption black">Последние новости</h3>
+            <div class="news-wrapper">
                 <ul class="news">
                     <li class="news-item">
                         <div class="news-item__image-wrapper news-item__image-wrapper1">
@@ -117,40 +119,6 @@
                                 Используйте специальную подставку для ноутбука, если вы проводите за ним больше 2 часов. Настройте высоту и яркость монитора! </p>
                         </div>
                     </li>
-                    <div class="counter">
-                        <span class="counter-text">Страница 1 из 7</span>
-                        <div class="pagination">
-                            <a href="#" class="pagination__btn pagination__left">
-                                <img src="" alt="" class="pagination__arrow">
-                            </a>
-                            <ul class="switcher__pages">
-                                <li class="switcher__page-item">
-                                    <a href="#" class="switcher__link switcher__active">1</a>
-                                </li>
-                                <li class="switcher__page-item">
-                                    <a href="#" class="switcher__link">2</a>
-                                </li>
-                                <li class="switcher__page-item">
-                                    <a href="#" class="switcher__link">3</a>
-                                </li>
-                                <li class="switcher__page-item">
-                                    <a href="#" class="switcher__link">4</a>
-                                </li>
-                                <li class="switcher__page-item">
-                                    <a href="#" class="switcher__link">5</a>
-                                </li>
-                                <li class="switcher__page-item">
-                                    <a href="#" class="switcher__link">6</a>
-                                </li>
-                                <li class="switcher__page-item">
-                                    <a href="#" class="switcher__link">7</a>
-                                </li>
-                            </ul>
-                            <a href="#" class="pagination__btn pagination__right pagination__active">
-                                <img src="" alt="" class="pagination__arrow">
-                            </a>
-                        </div>
-                    </div>
                 </ul>
                 <div class="top-news">
                     <h4 class="top-news__caption">
@@ -159,50 +127,98 @@
                     <span class="top-news__description">За сентябрь</span>
                     <ul class="top-news__list">
                         <li class="top-news__item">
-                            <img src="#" alt="" class="top-news__item-img">
+                            <img src="images/top-3.jpg" alt="" class="top-news__item-img">
                         </li>
                         <li class="top-news__item">
-                            <img src="#" alt="" class="top-news__item-img">
+                            <img src="images/top-2.jpg" alt="" class="top-news__item-img">
                         </li>
                         <li class="top-news__item">
-                            <img src="#" alt="" class="top-news__item-img">
+                            <img src="images/top-1.jpg" alt="" class="top-news__item-img">
                         </li>
                     </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container container-switcher">
+            <div class="counter">
+                <span class="counter-text">Страница 1 из 7</span>
+                <div class="pagination">
+                    <a href="#" class="pagination__btn pagination__left">
+                        <i class="fa fa-angle-left" aria-hidden="true"></i>
+                    </a>
+                    <ul class="switcher__pages">
+                        <li class="switcher__page-item switcher__active">
+                            <a href="#" class="switcher__link ">1</a>
+                        </li>
+                        <li class="switcher__page-item">
+                            <a href="#" class="switcher__link">2</a>
+                        </li>
+                        <li class="switcher__page-item">
+                            <a href="#" class="switcher__link">3</a>
+                        </li>
+                        <li class="switcher__page-item">
+                            <a href="#" class="switcher__link">4</a>
+                        </li>
+                        <li class="switcher__page-item">
+                            <a href="#" class="switcher__link">5</a>
+                        </li>
+                        <li class="switcher__page-item">
+                            <a href="#" class="switcher__link">6</a>
+                        </li>
+                        <li class="switcher__page-item">
+                            <a href="#" class="switcher__link">7</a>
+                        </li>
+                    </ul>
+                    <a href="#" class="pagination__btn pagination__right pagination__active">
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 </div>
 <footer class="footer">
-    <div class="copyright">
-        <p class="copyright__text">
-            Сделано с любовью и старанием
-            на курсе «HTML + CSS» в <a href="#">LoftSchool</a>.
-            Автор работы: <b>Прохладов Вадим</b>
-        </p>
-    </div>
-    <div class="logo">
-        <span class="logo-text">Афродита</span>
-    </div>
-    <div class="social">
-        <span class="social__text">Наши социальные сети</span>
-        <ul class="social__list">
-            <li class="social__item">
-                <img src="" alt="" class="social__image">
-            </li>
-            <li class="social__item">
-                <img src="" alt="" class="social__image">
-            </li>
-            <li class="social__item">
-                <img src="" alt="" class="social__image">
-            </li>
-            <li class="social__item">
-                <img src="" alt="" class="social__image">
-            </li>
-            <li class="social__item">
-                <img src="" alt="" class="social__image">
-            </li>
-        </ul>
+    <div class="container container-footer">
+        <div class="copyright">
+            <p class="copyright__text">
+                Сделано с любовью и старанием <br>
+                на курсе «HTML + CSS» в <a href="#">LoftSchool</a>.<br>
+                Автор работы: <b>Прохладов Вадим</b>
+            </p>
+        </div>
+        <div class="logo logo-footer">
+            <span class="logo-text">Афродита</span>
+        </div>
+        <div class="social">
+            <span class="social__text">Наши социальные сети</span>
+            <ul class="social__list">
+                <li class="social__item">
+                    <a href="#" class="social__item-link">
+                        <img src="images/vk.png" alt="" class="social__image">
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="#" class="social__item-link">
+                        <img src="images/fb.png" alt="" class="social__image">
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="#" class="social__item-link">
+                        <img src="images/google.png" alt="" class="social__image">
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="#" class="social__item-link">
+                        <img src="images/twitter.png" alt="" class="social__image">
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="#" class="social__item-link">
+                        <img src="images/mail.png" alt="" class="social__image">
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
 </footer>
 </body>
