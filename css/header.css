@@ -1,0 +1,177 @@
+.header {
+    background-color: #131415; }
+
+.container-header {
+    display: flex; }
+
+.logo {
+    align-self: center; }
+
+.logo-text {
+    font-family: Gora;
+    font-size: 18px;
+    color: #f89513;
+    text-decoration: none; }
+.logo-text:hover {
+    text-decoration: none; }
+
+.top-bar {
+    margin: 0 auto;
+    display: flex; }
+
+.top-bar__list {
+    list-style: none;
+    align-self: center; }
+
+.top-bar__item {
+    color: white;
+    display: inline-flex;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: "Open Sans";
+    font-weight: bold; }
+
+
+.top-bar__item-text {
+    margin-right: 28px;
+    padding-left: 12px;
+    display: flex;
+    height: 20px;
+    align-items: center;
+    transition: 0.2s;
+    color: white;
+    text-decoration: none; }
+.top-bar__item-text:hover {
+    color: #f89513;
+    text-decoration: none; }
+
+
+.top-bar__icon {
+    width: 19px;
+    height: 20px;
+}
+.top-bar__item-active .top-bar__item-text {
+    color: #f89513; }
+
+
+.top-bar__index-icon {
+    background-image: url("../images/sprites.png");
+    background-position: -107px -27px;
+
+}
+
+.top-bar__item-active .top-bar__index-icon {
+    background-position: -104px -2px;
+}
+
+.top-bar__index-icon:hover {
+    cursor: pointer;
+    background-position: -104px -2px;
+    background-repeat: no-repeat;
+}
+
+.top-bar__reviews-icon {
+    background: url("../images/sprites.png");
+    background-position: -75px -4px;
+    background-repeat: no-repeat;
+}
+.top-bar__reviews:hover .top-bar__reviews-icon {
+    background-position: -45px -2px;
+    background-repeat: no-repeat;
+    cursor: pointer; }
+
+.top-bar__service-icon {
+    background: url("../images/sprites.png") no-repeat;
+    background-repeat: no-repeat;
+    background-position: -74px -29px;}
+.top-bar__service:hover .top-bar__service-icon {
+    background: url("../images/sprites.png") no-repeat;
+    background-repeat: no-repeat;
+    background-position: -42px -27px;
+    cursor: pointer; }
+
+.head-contacts {
+    font-weight: bold;
+    font-family: "Open Sans";
+    text-decoration: none;
+    text-align: right;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    position: relative; }
+
+.head-contacts__phone {
+    color: white;
+    font-size: 21px;
+    text-decoration: none;
+    width: 100%; }
+
+
+
+.head-contacts__schedule:before {
+    content: '';
+    width: 100%; }
+.head-contacts__schedule:hover {
+    color: white; }
+
+.modal:before {
+    content: '';
+    position: absolute;
+    left: 87%;
+    top: -29%;
+    border: 10px solid transparent;
+    border-bottom: 10px solid white; }
+
+.modal {
+    background-color: white;
+    width: 162px;
+    height: 70px;
+    position: relative;
+    top: 11px;
+    box-shadow: 0 0 10px 0 rgba(23, 59, 117, 0.55);
+    border-radius: 3px;
+    box-sizing: border-box; }
+
+.mode {
+    padding: 14px 19px 14px 19px;
+    text-align: left;
+    align-self: flex-end;
+}
+
+.wrapper-mode {
+    position: absolute;
+    /*background-color: yellow;*/
+    width: 400px;
+    height: 150px;
+    top: 80%;
+    transition: 0.2s;
+    displaY: flex;
+    flex-direction: column;
+    opacity: 0;
+}
+
+.mode__main {
+    font-size: 14px;
+    font-family: "Open Sans";
+    font-weight: bold;
+    color: #f89513; }
+
+.mode__dinner {
+    font-size: 14px;
+    font-family: "Open Sans";
+    font-weight: 300; }
+
+.head-contacts__schedule:hover + .wrapper-mode {
+    opacity: 1; }
+
+.head-contacts__schedule {
+    color: #f89513;
+    font-size: 14px;
+    text-decoration: 1px solid #f89513;
+    opacity: 0.7;
+    transition: 0.2s;
+    position: static;
+}
+

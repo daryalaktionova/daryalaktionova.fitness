@@ -1,0 +1,8 @@
+.slider {
+    background-color: white;
+    display: flex;
+    height: 622px; }
+
+.slider__image {
+    margin: 0 auto;
+    align-self: center; }
