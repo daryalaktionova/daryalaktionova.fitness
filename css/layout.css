@@ -12,15 +12,10 @@ html {
     width: 100%; }
 
 body {
-    display: flex;
-    flex-direction: column;
     height: 100%;
-    width: 100%; }
+    width: 100%;
+}
 
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    height: 100%; }
 
 .main {
     flex: 1 0 auto; }
@@ -112,7 +107,10 @@ body {
 .wrapper {
     display: flex;
     flex-direction: column;
-    height: 100%; }
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
 
 
 .caption-black {
