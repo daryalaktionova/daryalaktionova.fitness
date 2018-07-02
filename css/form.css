@@ -80,3 +80,57 @@
     font-size: 14px;
     font-family: "Open Sans";
 }
+
+.form__radio-text:hover {
+    cursor: pointer;
+}
+
+.form__radio {
+    cursor: pointer;
+}
+
+.form__radio-text:before {
+    content: "";
+    display: inline-block;
+    height: 20px;
+    width: 21px;
+    margin: 0 5px 0 0;
+    background-image: url(../images/circle_empty.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 0.2s;
+}
+
+.form__radio-text {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    transition: 0.2s;
+}
+
+
+.form__radio-elem:checked + .form__radio-text:before {
+    background-image: url(../images/circle.png);
+}
+
+.form__radio-elem:checked + .form__radio-text {
+    color: #f89513;
+}
+
+.form__submit {
+    background-color: #1c1f1d;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 20px 22px 18px 22px;
+    transition: 0.2s;
+}
+
+.form__submit:hover {
+    cursor: pointer;
+    background-color: #f89513;
+}
